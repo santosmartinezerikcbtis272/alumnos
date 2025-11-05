@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template"flask_mongo_crud_alumnos/templates")
 app.secret_key = os.environ.get("FLASK_SECRET", "dev-secret")
 
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://santosmartinezerikcbtis272:1234@escuela.qjn2uo9.mongodb.net/escuela")
